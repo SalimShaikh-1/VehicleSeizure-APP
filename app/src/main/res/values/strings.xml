@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Vehicle Recovery</string>
+    <string name="msg_login_in">Login in. Please wait...</string>
+    <string name="invalidUsernameORPassword">Invalid Username OR Password</string>
+    <string name="msg_loading">Please wait...</string>
+    <string name="loginSuccessfully">Logon Successfully</string>
+    <string name="syncMessage"> Data is synchronize please wait...</string>
+    <string name="imageUploadSuccessfully"> Image Upload Successfully</string>
+    <string name="imageUploadFailed"> Image Upload Failed</string>
+    <string name="vehicleParkedSuccessfully"> Vehicle Parked Successfully</string>
+    <string name="vehicleParkedFailed"> Vehicle Parked Failed</string>
+    <string name="vehicleDetailsFetchSuccessfully"> Vehicle Details Fetch Successfully</string>
+    <string name="vehicleDetailsFetchFailed"> Vehicle Details Fetch Failed</string>
+    <string name="firstParkedVehicle"> First Parked Vehicle</string>
+
+    <string name="exit_title">Exit confirmation</string>
+    <string name="exit_subtitle">You sure you want to exit?</string>
+</resources>
