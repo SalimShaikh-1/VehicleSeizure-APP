@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Vehicle Recovery</string>
+    <string name="app_name">Vehicle Sezing</string>
     <string name="msg_login_in">Login in. Please wait...</string>
     <string name="invalidUsernameORPassword">Invalid Username OR Password</string>
     <string name="msg_loading">Please wait...</string>

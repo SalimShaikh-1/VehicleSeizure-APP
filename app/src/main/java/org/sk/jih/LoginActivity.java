@@ -55,6 +55,8 @@ public class LoginActivity extends AppCompatActivity implements LocationListener
 
         userName = (EditText) findViewById(R.id.editTextTextPersonName);
         password = (EditText) findViewById(R.id.editTextTextPersonName2);
+        userName.setText("");
+        password.setText("");
         btn = (Button) findViewById(R.id.button);
 
         deviceId();

@@ -79,11 +79,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         vehicles = db.getAllVehicles();
-        toolbar = (Toolbar) findViewById(R.id.app_bar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("Vehicle Sezing");
         setSupportActionBar(toolbar);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.baseline);
+//        getSupportActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeAsUpIndicator(R.drawable.baseline);
 
         initInstances();
 
@@ -198,12 +202,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.home:
-                drawerLayout.openDrawer(GravityCompat.START);
-                return true;
-        }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Log.d("itemId", String.valueOf(item.getItemId()));
+        drawerLayout.openDrawer(GravityCompat.START);
         return super.onOptionsItemSelected(item);
     }
 
@@ -290,7 +291,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 finish();
-                System.exit(0);
+                onDestroy();
+//                System.exit(0);
             }
         });
 
